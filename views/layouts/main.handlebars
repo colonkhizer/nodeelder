@@ -11,7 +11,28 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    {{{ body }}}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Stock Portfolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/about">Link</a>
+      </li>
+    </ul>
+    <form action="/" method="POST" class="form-inline my-2 my-lg-0">
+      <input name="stock_ticker" class="form-control mr-sm-2" type="search" placeholder="Lookup Stock Quote" aria-label="Search">
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Lookup</button>
+    </form>
+  </div>
+</nav>
+<br/>
+    <div class="container">
+      {{{ body }}}
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

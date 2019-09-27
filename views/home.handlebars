@@ -1,2 +1,41 @@
-<h1>My Handlebars<h1/>
-<p>{{ stuff }}</p>
+{{ posted_stuff }}
+
+<h2>{{ stock.companyName }} | {{ stock.symbol }}</h2>
+<br>
+<table class="table table-dark">
+  <tbody>
+    <tr>
+      <td>Latest Price</td>
+      <td>{{ stock.latestPrice }}</td>
+    </tr>
+    <tr>
+      <td>Previous Close</td>
+      <td>{{ stock.previousClose }}</td>
+    </tr>
+    <tr>
+      <td>Percent Change</td>
+      <td>{{ stock.changePercent }}</td>
+    </tr>
+    <tr>
+      <td>Market Cap</td>
+      <td>{{ stock.marketCap }}</td>
+    </tr>
+    <tr>
+      <td>YTD Change</td>
+      <td>{{ stock.ytdChange }}</td>
+    </tr>
+    <tr>
+      <td>S2wk High</td>
+      <td>{{ stock.week52High }}</td>
+    </tr>
+    <tr>
+      <td>S2wk Low</td>
+      <td>{{ stock.week52Low }}</td>
+    </tr>
+  </tbody>
+</table>
+<!-- {{#each stuff}}
+
+ {{@key}} | {{this}} <br>
+
+{{/each }} -->
